@@ -1,9 +1,10 @@
 import React from 'react'
+import ReactDOM from 'react-dom'
+import App from './app.js'
 
-export default function App () {
-  return (
-    <div>
-      Hello
-    </div>
-  )
-}
+import './styles.css'
+
+ReactDOM.render(
+    <App />,
+    document.getElementById('root')
+)

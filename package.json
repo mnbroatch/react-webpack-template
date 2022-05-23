@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "webpack-dev-server --config ./webpack.config.dev.js",
     "build": "node_modules/.bin/webpack"
   },
   "devDependencies": {
@@ -28,6 +29,7 @@
     "style-loader": "^3.3.1",
     "webpack": "^5.66.0",
     "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.8.1",
     "yarn-bound": "0.2.3"
   },
   "author": "",

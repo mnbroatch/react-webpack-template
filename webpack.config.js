@@ -1,15 +1,15 @@
 const HtmlWebPackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-  entry: './main.js',
+  entry: './index.js',
   output: {
-    filename: 'build.js',
+    filename: 'build.js'
   },
   optimization: {
-    minimize: false,
+    minimize: false
   },
   plugins: [
-    new HtmlWebPackPlugin({ 
+    new HtmlWebPackPlugin({
       title: 'React Template',
       template: './index.html'
     })
@@ -30,13 +30,13 @@ module.exports = {
         test: /\.s?[ac]ss$/i,
         use: [
           // Creates `style` nodes from JS strings
-          "style-loader",
+          'style-loader',
           // Translates CSS into CommonJS
-          "css-loader",
+          'css-loader',
           // Compiles Sass to CSS
-          "sass-loader",
-        ],
-      },
+          'sass-loader'
+        ]
+      }
     ]
   }
-};
+}
